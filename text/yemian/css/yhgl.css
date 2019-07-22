@@ -1,0 +1,10 @@
+.bgimg{
+	width: 100%;
+	z-index:2
+}
+.caidan{
+	left: 30px;
+	top: 70px;
+	position:absolute;
+	z-index:1
+}

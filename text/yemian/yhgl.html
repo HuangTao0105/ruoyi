@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/yhgl.css">
+		<link rel="stylesheet" href="../layui/css/layui.css">
+	</head>
+	<body>
+		<div>
+			<p>登陆名称:<input type="text" size=""></p>
+		</div>
+		<img class="bgimg" src="img/yhgl.JPG" />
+		<div class="caidan">
+			<div id="test1"></div>
+			<script src="../layui/layui.js"></script>
+			<script>
+				layui.use('tree', function() {
+					var tree = layui.tree;
+					//渲染
+					var inst1 = tree.render({
+						elem: '#test1' //绑定元素
+							,
+						data: [{
+							spread:true,
+							title: '江西' //一级菜单
+								,
+							children: [{
+								spread:true,
+									title: '南昌' //二级菜单
+										,
+									children: [{
+											title: '高新区' //三级菜单
+											//…… //以此类推，可无限层级
+										}, {
+											title: '高新区' //三级菜单
+											//…… //以此类推，可无限层级
+										}, {
+											title: '高新区' //三级菜单
+											//…… //以此类推，可无限层级
+										}, {
+											title: '高新区' //三级菜单
+											//…… //以此类推，可无限层级
+										},
+										{
+											title: '高新区' //三级菜单
+											//…… //以此类推，可无限层级
+										}
+									]
+								},
+								{
+									title: '南昌' //二级菜单
+										,
+									children: [{
+											title: '高新区' //三级菜单
+											//…… //以此类推，可无限层级
+										},
+										{
+											title: '高新区' //三级菜单
+											//…… //以此类推，可无限层级
+										}
+									]
+								}
+							]
+						}]
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>

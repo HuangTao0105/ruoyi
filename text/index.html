@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css">
+	</head>
+	<body>
+		<div class="headerimg">
+			<img src="img/denglu/RuoYi.jpg" />
+		</div>
+
+		<div>
+			<a><img class="xingxi" src="img/denglu/ingxi.jpg" /></a>
+			<a class="adminname">admin</a>
+			<a class="zaixian">在线</a><a class="zhuxiao">注销</a>
+		</div>
+		<img src="img/denglu/profile.png" class="layui-nav-img1">
+		<div class="RuoYitext">
+			<p>
+				RuoYi
+			</p>
+		</div>
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-header">
+				<!-- 头部区域（可配合layui已有的水平导航） -->
+				<ul class="layui-nav layui-layout-left">
+					<li class="layui-nav-item"><a href=""><i class="layui-icon">&#xe6ed;</i> 视频教程</a></li>
+					<li class="layui-nav-item"><a href=""><i class="layui-icon">&#xe6b2;</i> 开发文档</a></li>
+					<li class="layui-nav-item"><a href="">全屏显示</a></li>
+					<li class="layui-nav-item">
+					</li>
+				</ul>
+				<ul class="layui-nav layui-layout-right">
+					<li class="layui-nav-item">
+						<a href="javascript:;">
+							<img src="img/denglu/profile.png" class="layui-nav-img">
+							若依
+						</a>
+						<dl class="layui-nav-child">
+							<dd><a href="">个人中心</a></dd>
+							<dd><a href="">修改密码</a></dd>
+							<dd><a href="">
+									<hr /></a></dd>
+							<dd><a href="">退出登录</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+
+			<div class="layui-side layui-bg-black">
+				<div class="layui-side-scroll">
+					<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+					<ul class="layui-nav layui-nav-tree" lay-filter="test">
+						<li class="layui-nav-item layui-nav-itemed">
+							<a class="" href="javascript:;"><i class="layui-icon">&#xe68e;</i> 主页</a>
+							<dl class="layui-nav-child">
+								<dd><a href="javascript:;">了解诺依</a></dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="layui-icon">&#xe716;</i> 解决方案</a>
+							<dl class="layui-nav-child">
+								<dd><a href="javascript:;">用户管理</a></dd>
+								<dd><a href="javascript:;">角色管理</a></dd>
+								<dd><a href="javascript:;">菜单管理</a></dd>
+								<dd><a href="javascript:;">部门管理</a></dd>
+								<dd><a href="javascript:;">岗位管理</a></dd>
+								<dd><a href="javascript:;">字典管理</a></dd>
+								<dd><a href="javascript:;">参数设置</a></dd>
+								<dd><a href="javascript:;">通知公告</a></dd>
+								<dd><a href="javascript:;">日志管理</a></dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="layui-icon">&#xe66b;</i> 系统监控</a>
+							<dl class="layui-nav-child">
+								<dd><a href="javascript:;">在线用户</a></dd>
+								<dd><a href="javascript:;">定时任务</a></dd>
+								<dd><a href="javascript:;">数据监控</a></dd>
+								<dd><a href="javascript:;">服务监控</a></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="layui-body">
+				<div class="layui-tab" lay-allowClose="true">
+					<ul class="layui-tab-title">
+						<li class="layui-this">首页</li>
+						<li>用户管理</li>
+						<li>角色管理</li>
+						<li>菜单管理</li>
+						<li>部门管理</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="layui-footer">
+				<!-- 底部固定区域 -->
+				© layui.com - 底部固定区域
+			</div>
+		</div>
+
+		<script src="layui/layui.js"></script>
+		<script type="text/javascript">
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+		</script>
+	</body>
+</html>
