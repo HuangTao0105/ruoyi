@@ -1,0 +1,38 @@
+.admin{
+	background-color: #2f4050;
+	position: fixed;
+	left: 0;
+	top: 50px;
+	z-index: 1102;
+	width: 220px;
+	height: 100px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-weight: 300;
+	background-repeat: no-repeat;
+	background-position: center center
+}
+.adminimg{
+	position: fixed;
+	left: 10px;
+	top: 70px;
+}
+.admintext{
+	position: fixed;
+	color: #F0F0F0;
+	left: 70px;
+	top: 70px;
+}
+.admintext1{
+	position: fixed;
+	color: #F0F0F0;
+	left: 70px;
+	top: 100px;
+}
+.admintext2{
+	position: fixed;
+	color: #F0F0F0;
+	left: 110px;
+	top: 100px;
+}
